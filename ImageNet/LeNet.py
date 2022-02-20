@@ -55,7 +55,7 @@ class LeNet(nn.Module):
                     ("Flatten", nn.Flatten()),
                     ("FC_0", nn.Linear(in_features=7*7*50, out_features=500)),
                     ("Activation_2", nn.Tanh()),
-                    ("FC_1", nn.Linear(in_features=500, out_features=10)),
+                    ("FC_1", nn.Linear(in_features=500, out_features=num_classes)),
                     ("Activation_3", nn.Softmax(dim=1))
                     ]))
 
