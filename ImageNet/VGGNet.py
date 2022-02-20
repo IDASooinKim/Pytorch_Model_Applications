@@ -176,7 +176,7 @@ class VGG16(nn.Module):
                         ("Activation_50", nn.LeakyReLU()),
                         ("FC_1", nn.Linear(4096,4096)),
                         ("Activation_51", nn.LeakyReLU()),
-                        ("FC_2", nn.Linear(4096,1000)),
+                        ("FC_2", nn.Linear(4096,num_classes)),
                         ("Activation_52", nn.Softmax(dim=1))
                         ]))
 
