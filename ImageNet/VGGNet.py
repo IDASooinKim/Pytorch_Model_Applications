@@ -13,8 +13,8 @@ import collections
 r"""
     [Examples]
     for load model and print model structure
-        model = LeNet(in_channels=1, num_classes=1000).cuda()
-        torchsummary.summary(model, input_size=(1,28,28))
+        model = LeNet(in_channels=3, num_classes=1000).cuda()
+        torchsummary.summary(model, input_size=(3,224,224))
 """
 
 class VGG16(nn.Module):
