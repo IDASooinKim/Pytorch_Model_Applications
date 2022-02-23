@@ -494,7 +494,7 @@ class VGG16(nn.Module):
 class VGG19(nn.Module):
 
         r"""
-            Return the torch modules, containing LeNet v1 model.
+            Return the torch modules, containing VGG19 model.
             Args:
                 in_channels : the number of channels included in input data.
                 num_classes : the number of classes.
