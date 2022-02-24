@@ -36,7 +36,19 @@ def conv_start():
                 ]))
 
 def bottleneck_block(in_channels, mid_channels, out_channels, down=False):
-    
+    r"""
+        Return BottleNeck layer.
+        Args:
+            in_channels : Depth of previous extracted features.
+            mid_channels : Depth of second extracted features in bottle-neck.
+            out_channels : Depth of last extracted or out features in bottle-neck.
+            dowm : if False, middle layer are used for feature size reduction.
+            
+        Term:
+            BottleNeck
+                A typical convolution layer has a kernel size of 2 or more, allowing spatial information to be extracted.
+                In contrast, BottleNeck layer has single kernel size only for calculation volumn reduction.
+    """
     layers = []
     
     if down:
