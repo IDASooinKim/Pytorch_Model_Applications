@@ -93,12 +93,12 @@ def make_layer(in_channels, mid_channels, out_channels, repeats, starting=False)
         return nn.Sequential(*layers)
 
 class ResNet(nn.Module):
-       r"""
-            Return the torch modules, containing VGG11 model.
-            Args:
-                repeats:list : repeat skip-connection
-                num_classes : the number of classes.
-        """
+   r"""
+        Return the torch modules, containing VGG11 model.
+        Args:
+            repeats:list : repeat skip-connection
+            num_classes : the number of classes.
+    """
     def __init__(self, repeats:list = [3,4,6,3], num_classes=1000):
         super(ResNet, self).__init__()
         self.num_classes = num_classes
