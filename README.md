@@ -1,4 +1,4 @@
-|model|paper|
+|**model|**paper|
 |--------------------|----------------------|
 |LeNet|Gradient-based Learning Appplied to Document Recognition|
 |VGG|Very Deep Convolutional Neural Networks For Large-Scale Image Recognition|
